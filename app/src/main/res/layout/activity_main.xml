@@ -6,51 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/default_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="@string/fundraising_title">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/activity_title"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/fundraising_title"
-                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
-
-            <LinearLayout
-                android:layout_width="88dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:background="@drawable/menu_buttons_background">
-                <Button
-                    android:layout_width="44dp"
-                    android:layout_height="32dp"
-                    android:background="@drawable/btn_more_ripple"
-                />
-                <Button
-                    android:layout_width="44dp"
-                    android:layout_height="32dp"
-                    android:background="@drawable/btn_cross_ripple"/>
-            </LinearLayout>
-
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/toolbar" />
 
     <TextView
         android:id="@+id/empty_donations_textview"
