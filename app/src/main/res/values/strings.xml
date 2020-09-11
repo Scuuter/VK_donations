@@ -6,4 +6,8 @@
     <string name="create_donations_button_text">Создать сбор</string>
     <string name="author">Автор</string>
     <string name="help_first">Помогите первым</string>
+    <string-array name="authors">
+        <item>Матвей Правосудов</item>
+        <item>Дмитрий Фокин</item>
+    </string-array>
 </resources>
