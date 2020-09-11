@@ -23,7 +23,6 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/fundraising_title"
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
         <LinearLayout
