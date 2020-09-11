@@ -21,5 +21,8 @@ class ExtraActivity : AppCompatActivity() {
             // Apply the adapter to the spinner
             spinner.adapter = adapter
         }
+
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.btn_back)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 }
