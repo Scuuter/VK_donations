@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ChooseDonationTypeActivity"/>
+        <activity
+            android:name=".ChooseDonationTypeActivity"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
