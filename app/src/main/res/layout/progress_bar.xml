@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="54dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/empty_donations_textview"
+        android:id="@+id/donation_snippet_textview"
         android:layout_width="297dp"
         android:layout_height="wrap_content"
         android:text="@string/help_first"
@@ -13,7 +13,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/help_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <ProgressBar
@@ -21,7 +20,6 @@
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="297dp"
         android:layout_height="17dp"
-        android:layout_marginStart="5dp"
         android:padding="6dp"
         android:progress="0"
         android:progressBackgroundTint="#303F8AE0"
@@ -29,17 +27,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintTop_toBottomOf="@id/donation_snippet_textview" />
 
     <Button
         android:id="@+id/help_button"
         android:layout_width="86dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="684dp"
         android:background="@drawable/help_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintTop_toTopOf="@id/donation_snippet_textview"
         app:layout_constraintLeft_toRightOf="@id/progress_bar"
         app:layout_constraintRight_toRightOf="parent" />
 

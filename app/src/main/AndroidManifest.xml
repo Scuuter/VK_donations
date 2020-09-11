@@ -22,7 +22,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ExtraActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".ChooseDonationTypeActivity" />
     </application>
 
 </manifest>

@@ -2,14 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <include layout="@layout/toolbar" />
 
     <Button
-        android:id="@+id/target_collection"
+        android:id="@+id/target_donation"
         android:layout_width="351dp"
         android:layout_height="62dp"
         android:layout_marginBottom="410dp"
@@ -19,6 +18,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
+        android:id="@+id/regular_donation"
         android:layout_width="351dp"
         android:layout_height="62dp"
         android:layout_marginTop="12dp"
@@ -27,7 +27,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/target_collection"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/target_donation"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

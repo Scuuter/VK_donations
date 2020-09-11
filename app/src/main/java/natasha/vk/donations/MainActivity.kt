@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         val title = toolbar.findViewById<TextView>(R.id.activity_title)
         title.text = getString(R.string.fundraising_title)
+        supportActionBar?.title = title.text
 
         val button = findViewById<Button>(R.id.create_donation_button)
         button.setOnClickListener { startActivity(Intent(this, ChooseDonationTypeActivity::class.java)) }
