@@ -8,6 +8,9 @@
     <string name="help_first">Помогите первым</string>
     <string-array name="authors">
         <item>Матвей Правосудов</item>
-        <item>Дмитрий Фокин</item>
+        <item>Сообщество фанатов Матвея Правосудова &lt;3</item>
     </string-array>
+    <string name="collection_finish">Сбор завершится</string>
+    <string name="expiration_date">Дата окончания</string>
+
 </resources>
