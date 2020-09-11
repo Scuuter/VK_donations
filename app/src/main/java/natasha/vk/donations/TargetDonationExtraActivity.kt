@@ -15,7 +15,7 @@ class TargetDonationExtraActivity : AppCompatActivity() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         val title = toolbar.findViewById<TextView>(R.id.activity_title)
-        title?.text = getString(R.string.choose_donation_type_title)
+        title?.text = getString(R.string.target_donation_extra_title)
         supportActionBar?.title = title.text
 
         supportActionBar?.setHomeAsUpIndicator(R.drawable.btn_back)

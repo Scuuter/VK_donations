@@ -2,6 +2,8 @@
     <string name="app_name">VK_donations</string>
     <string name="fundraising_title">Пожертвования</string>
     <string name="choose_donation_type_title">Тип сбора</string>
+    <string name="target_donation_extra_title">Дополнительно</string>
+    <string name="target_donation_title">Целевой сбор</string>
     <string name="empty_donations_text">У Вас пока нет сборов.\nНачните доброе дело.</string>
     <string name="create_donations_button_text">Создать сбор</string>
     <string name="author">Автор</string>
