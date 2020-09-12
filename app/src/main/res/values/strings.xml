@@ -16,5 +16,8 @@
     <string name="collection_done">Когда соберем сумму</string>
     <string name="concrete_date">В определённую дату</string>
     <string name="expiration_date">Дата окончания</string>
+    <string-array name="money_sources">
+        <item>Счёт VK Pay &#183; 1234</item>
+    </string-array>
 
 </resources>
