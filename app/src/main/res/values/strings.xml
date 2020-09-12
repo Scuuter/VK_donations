@@ -4,9 +4,9 @@
     <string name="choose_donation_type_title">Тип сбора</string>
     <string name="target_donation_extra_title">Дополнительно</string>
     <string name="target_donation_title">Целевой сбор</string>
+    <string name="regular_donation_title">Регулярный сбор</string>
     <string name="empty_donations_text">У Вас пока нет сборов.\nНачните доброе дело.</string>
     <string name="create_donations_button_text">Создать сбор</string>
-    <string name="author">Автор</string>
     <string name="help_first">Помогите первым</string>
     <string-array name="authors">
         <item>Матвей Правосудов</item>
@@ -16,6 +16,19 @@
     <string name="collection_done">Когда соберем сумму</string>
     <string name="concrete_date">В определённую дату</string>
     <string name="expiration_date">Дата окончания</string>
+    <string name="field_donation_name">Название сбора</string>
+    <string name="example_donation_name">Название сбора</string>
+    <string name="field_target_sum">Сумма, ₽</string>
+    <string name="example_target_sum">Сколько нужно собрать?</string>
+    <string name="field_regular_sum">Сумма в месяц, ₽</string>
+    <string name="example_regular_sum">Сколько нужно в месяц?</string>
+    <string name="field_aim">Цель</string>
+    <string name="example_target_aim">Например, лечение человека</string>
+    <string name="example_regular_aim">Например, поддержка приюта</string>
+    <string name="field_descr">Описание</string>
+    <string name="example_descr">На что пойдут деньги и как они кому-то помогут?</string>
+    <string name="field_money">Куда получать деньги</string>
+    <string name="field_author">Автор</string>
     <string-array name="money_sources">
         <item>Счёт VK Pay &#183; 1234</item>
     </string-array>

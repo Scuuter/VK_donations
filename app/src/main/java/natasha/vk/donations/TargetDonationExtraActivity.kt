@@ -26,7 +26,7 @@ class TargetDonationExtraActivity : AppCompatActivity() {
         supportActionBar?.setHomeAsUpIndicator(R.drawable.btn_back)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val spinner: Spinner = findViewById(R.id.spinner)
+        val spinner: Spinner = findViewById(R.id.author_spinner)
         ArrayAdapter.createFromResource(
             this,
             R.array.authors,

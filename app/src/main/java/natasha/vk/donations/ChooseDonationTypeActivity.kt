@@ -21,8 +21,11 @@ class ChooseDonationTypeActivity : AppCompatActivity() {
         supportActionBar?.setHomeAsUpIndicator(R.drawable.btn_back)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val button = findViewById<Button>(R.id.target_donation)
-        button?.setOnClickListener { startActivity(Intent(this, TargetDonationActivity::class.java)) }
+        val targetButton = findViewById<Button>(R.id.target_donation)
+        targetButton?.setOnClickListener { startActivity(Intent(this, TargetDonationActivity::class.java)) }
+
+        val regularButton = findViewById<Button>(R.id.regular_donation)
+        regularButton?.setOnClickListener { startActivity(Intent(this, RegularDonationActivity::class.java)) }
 
     }
 }
