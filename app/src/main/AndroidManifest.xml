@@ -27,6 +27,9 @@
             android:parentActivityName=".TargetDonationActivity" />
         <activity android:name=".RegularDonationActivity"
             android:parentActivityName=".ChooseDonationTypeActivity"/>
+        <activity
+            android:name=".PostingActivity"
+            android:parentActivityName=".TargetDonationExtraActivity" />
     </application>
 
 </manifest>

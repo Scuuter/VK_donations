@@ -1,6 +1,7 @@
 package natasha.vk.donations
 
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.text.Html
 import android.view.View
@@ -95,6 +96,9 @@ class TargetDonationExtraActivity : AppCompatActivity() {
                 .create()
                 .show()
         }
+
+        buttonCreateCollection?.setOnClickListener { startActivity(Intent(this, PostingActivity::class.java)) }
+
     }
 
 }
