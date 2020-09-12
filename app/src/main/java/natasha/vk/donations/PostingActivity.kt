@@ -18,7 +18,7 @@ class PostingActivity : AppCompatActivity() {
         val author = bundle?.getString("author")
 
         val nameField = findViewById<TextView>(R.id.name)
-        val name = bundle?.getString("name")
+        val name = bundle?.getCharSequence("name")
         nameField.text = name
 
         val authorField = findViewById<TextView>(R.id.author)
