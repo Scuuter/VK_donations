@@ -31,6 +31,7 @@
     <string name="field_author">Автор</string>
     <string-array name="money_sources">
         <item>Счёт VK Pay &#183; 1234</item>
+        <item>Кошелёк папы</item>
     </string-array>
 
 </resources>

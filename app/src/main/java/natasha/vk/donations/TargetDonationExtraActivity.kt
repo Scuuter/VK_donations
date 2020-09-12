@@ -17,6 +17,7 @@ class TargetDonationExtraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.target_donation_extra)
+        val bundle = intent.extras
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -27,7 +28,7 @@ class TargetDonationExtraActivity : AppCompatActivity() {
         supportActionBar?.setHomeAsUpIndicator(R.drawable.btn_back)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val spinner: Spinner = findViewById(R.id.author_spinner)
+        val authorSpinner: Spinner? = findViewById(R.id.author_spinner)
         ArrayAdapter.createFromResource(
             this,
             R.array.authors,
@@ -36,7 +37,7 @@ class TargetDonationExtraActivity : AppCompatActivity() {
             // Specify the layout to use when the list of choices appears
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             // Apply the adapter to the spinner
-            spinner.adapter = adapter
+            authorSpinner?.adapter = adapter
         }
 
         val buttonCreateCollection = findViewById<Button>(R.id.create_collection)
@@ -97,7 +98,13 @@ class TargetDonationExtraActivity : AppCompatActivity() {
                 .show()
         }
 
-        buttonCreateCollection?.setOnClickListener { startActivity(Intent(this, PostingActivity::class.java)) }
+        buttonCreateCollection?.setOnClickListener {
+            val intent = Intent(this, PostingActivity::class.java)
+            authorSpinner?.selectedItem?.let {bundle?.putString("author", authorSpinner.selectedItem.toString()) }
+
+            bundle?.let { intent.putExtras(bundle) }
+
+            startActivity(intent) }
 
     }
 
