@@ -17,6 +17,13 @@ class PostingActivity : AppCompatActivity() {
         val bundle = intent.extras
         val author = bundle?.getString("author")
 
+        val nameField = findViewById<TextView>(R.id.name)
+        val name = bundle?.getString("name")
+        nameField.text = name
+
+        val authorField = findViewById<TextView>(R.id.author)
+        authorField.text = author
+
         val toolbar = findViewById<Toolbar>(R.id.posting_toolbar)
         setSupportActionBar(toolbar)
         val title = toolbar.findViewById<TextView>(R.id.activity_title)
