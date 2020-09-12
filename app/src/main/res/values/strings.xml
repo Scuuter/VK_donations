@@ -15,7 +15,6 @@
     <string name="collection_finish">Сбор завершится</string>
     <string name="collection_done">Когда соберем сумму</string>
     <string name="concrete_date">В определённую дату</string>
-
     <string name="expiration_date">Дата окончания</string>
 
 </resources>
