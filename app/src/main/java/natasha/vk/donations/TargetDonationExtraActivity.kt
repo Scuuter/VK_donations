@@ -3,6 +3,7 @@ package natasha.vk.donations
 import android.content.DialogInterface
 import android.os.Bundle
 import android.text.Html
+import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -38,28 +39,27 @@ class TargetDonationExtraActivity : AppCompatActivity() {
         }
 
         val buttonCreateCollection = findViewById<Button>(R.id.create_collection)
-        val textView = findViewById<TextView>(R.id.dateText)
+        val textViewExpirationDate = findViewById<TextView>(R.id.expiration_date)
+        val textViewDateText = findViewById<TextView>(R.id.dateText)
 
         val collectionDone = findViewById<RadioButton>(R.id.collection_done)
         collectionDone.setOnClickListener {
             buttonCreateCollection.alpha = 1.0f
             buttonCreateCollection.isClickable = true
-            textView.isClickable = false
-            textView.isFocusable = false
-            textView.isLongClickable = false
-            textView.text="Выберите дату"
+            textViewExpirationDate.visibility = View.GONE
+            textViewDateText.text = "Выберите дату"
+            textViewDateText.visibility = View.GONE
         }
 
         val concreteDate = findViewById<RadioButton>(R.id.concrete_date)
         concreteDate.setOnClickListener {
             buttonCreateCollection.alpha = 0.4f
             buttonCreateCollection.isClickable = false
-            textView.isClickable = true
-            textView.isFocusable = true
-            textView.isLongClickable = true
+            textViewExpirationDate.visibility = View.VISIBLE
+            textViewDateText.visibility = View.VISIBLE
         }
 
-        textView.setOnClickListener {
+        textViewDateText.setOnClickListener {
             //Set spinner/calendar date picker layout
             val spinnerDatePicker = layoutInflater.inflate(R.layout.calendar, null)
             spinnerDatePicker.datePicker.minDate = Calendar.getInstance().timeInMillis - 1
@@ -68,7 +68,7 @@ class TargetDonationExtraActivity : AppCompatActivity() {
             val dialogClickListener = DialogInterface.OnClickListener { _, which ->
                 when (which) {
                     DialogInterface.BUTTON_POSITIVE -> {
-                        textView.text =
+                        textViewDateText.text =
                             spinnerDatePicker.datePicker.dayOfMonth.toString() + "/" + (spinnerDatePicker.datePicker.month + 1) + "/" + spinnerDatePicker.datePicker.year
                         buttonCreateCollection.alpha = 1.0f
                         buttonCreateCollection.isClickable = true
