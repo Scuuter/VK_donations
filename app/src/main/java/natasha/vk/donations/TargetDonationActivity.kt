@@ -16,7 +16,7 @@ import java.io.IOException
 class TargetDonationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.target_donation)
+        setContentView(R.layout.create_donation)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)

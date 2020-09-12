@@ -13,7 +13,7 @@
         android:id="@+id/upload_image"
         android:layout_width="351dp"
         android:layout_height="140dp"
-        android:background="@drawable/cover"
+        android:background="@drawable/upload_image"
         android:layout_margin="5dp"
         app:layout_constraintBottom_toTopOf="@id/name_layout"
         app:layout_constraintStart_toStartOf="parent"
